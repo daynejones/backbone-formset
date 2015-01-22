@@ -1,7 +1,7 @@
 # backbone-formset
 This is a backbone plugin designed to work with Django's formsets.
 
-Include this file then extend FormSetView like so:
+Include this file then extend FormsetView like so:
 
 View.MyForm = Backbone.FormsetView.extend({})
 
