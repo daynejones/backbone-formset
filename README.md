@@ -5,8 +5,29 @@ Include this file then extend FormsetView like so:
 
 ```
 View.MyForm = Backbone.FormsetView.extend({})
+```
 
-## Options
+Here's a real world example of its use:
+
+```
+View.ToolForm = Backbone.FormsetView.extend({
+  el: "#tools",
+  template: _.template($("#toolFormTemplate").html()),
+  deleteButtonHTML: '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>',
+  addButtonHTML: '<button type="button" class="btn btn-default">Add</button>',
+  initialize: function(){
+    this.formPrefix = settings.toolFormsetPrefix;
+  }
+});
+```
+
+In this case, I set settings.toolFormsetPrefix in the template like so:
+
+```
+var toolFormsetPrefix = "{{ tool_formset.prefix }}";
+```
+
+## Additional Options
 
 formPrefix: prefix for your formset... usually from `{{ formset.prefix }}` in your template
 
@@ -23,4 +44,6 @@ deleteButtonHTML: HTML used for delete button. default is '<a href="#">Delete</a
 addedCallback = callback called after form is added. default is ''
 
 
-Check out guide_tools-example.js for a real world application of this plugin. 
+Project status:
+
+The project was built out for a need we encountered during the development of Howchoo.com. For that reason, it may be missing features that you may wish for. Feel free to leave feedback as I plan on maintaining this project.
