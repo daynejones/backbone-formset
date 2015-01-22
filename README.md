@@ -45,6 +45,6 @@ deleteButtonHTML: HTML used for delete button. default is '<a href="#">Delete</a
 addedCallback = callback called after form is added. default is ''
 
 
-##Project status:
+##Project status
 
 The project was built out for a need we encountered during the development of Howchoo.com. For that reason, it may be missing features that you may wish for. Feel free to leave feedback as I plan on maintaining this project.
