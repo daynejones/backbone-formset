@@ -3,6 +3,7 @@ This is a backbone plugin designed to work with Django's formsets.
 
 Include this file then extend FormsetView like so:
 
+```
 View.MyForm = Backbone.FormsetView.extend({})
 
 ## Options
@@ -20,3 +21,6 @@ addButtonHTML: HTML used for add button. default is '<button type="button">' + t
 deleteButtonHTML: HTML used for delete button. default is '<a href="#">Delete</a>'
 
 addedCallback = callback called after form is added. default is ''
+
+
+Check out guide_tools-example.js for a real world application of this plugin. 
