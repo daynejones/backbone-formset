@@ -1,5 +1,6 @@
 # backbone-formset
-This is a backbone plugin designed to work with Django's formsets.
+This is a backbone plugin designed to work with Django's formsets. You will get dynamic add and remove buttons in the front end which your management form on the backend should understand.
+
 
 Include this file then extend FormsetView like so:
 
